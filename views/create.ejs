@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="blogs content">
+        <h2 style="background:cornflowerblue">nouveau blog</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius totam officiis officia s!</p>
+        <form action="/blogs" method="POST" class="create-blog">
+            <label for="title">Nom</label>
+            <input type="text" id="title" name="title">
+
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom" name="snippet">
+
+            <label for="texte">Le message</label>
+            <textarea  id="texte" cols="30" rows="10" name="body" required></textarea>
+            <button>Envoyer</button>
+
+        </form>
+        <%- include('./partials/footer.ejs') %>
+        
+    </div>
+</body>
+</html>
